@@ -1,0 +1,17 @@
+第一步 控制台输入：	
+$ sudo gem install cocoapods --pre
+
+第二步 在我们的项目目录下输入：
+pod init
+
+第三步 输入第二步的指令后，项目文件内会出现名为podfile的文件，将此文件代码替换为：
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+ 
+target 'Ass3' do
+ use_frameworks!
+ pod 'Alamofire', '~> 4.3'
+end
+
+第四步 在项目目录下输入：
+pod install
